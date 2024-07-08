@@ -48,7 +48,7 @@ main{
 .hero{
   display: flex;
   padding: 50px;
-  gap: 20px;
+  gap: 30px;
   margin-top: 10px;
   text-align: center;
   align-items: center;
@@ -68,6 +68,16 @@ main{
 .inspiracion{
   background-color: white;
   border: 0;
+}
+.comprar a{
+  text-decoration: none;
+  list-style: none;
+  color: white;
+}
+.inspiracion a{
+  text-decoration: none;
+  list-style: none;
+  color: black
 }
 .hero>img{
   width: 70%;
