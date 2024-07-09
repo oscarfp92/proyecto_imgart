@@ -120,12 +120,12 @@ article button{
   border: none;
   font-size: medium;
 }
-div img{
+.fav{
   width: 20px;
   border: none;
   filter: grayscale(100%);
 }
-div img:hover{
+.fav:hover{
   filter: grayscale(0%);
 }
 footer{
