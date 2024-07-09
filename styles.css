@@ -114,12 +114,18 @@ article div{
   justify-content: center;
   gap: 5px;
 }
-.fav{
+article button{
+  background-color: white;
+  color: black;
+  border: none;
+  font-size: medium;
+}
+div img{
   width: 20px;
   border: none;
   filter: grayscale(100%);
 }
-.fav:hover{
+div img:hover{
   filter: grayscale(0%);
 }
 footer{
@@ -136,9 +142,13 @@ footer ul{
   list-style: none;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: small;
-  color: grey;
   display: flex;
   justify-content: center;
   gap: 15px;
   padding: 20px;
+}
+.pie a{
+  text-decoration: none;
+  color: grey;
+
 }
