@@ -10,12 +10,13 @@ body{
   box-sizing: border-box;
   font-size: 16px;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
+  min-width: 750px;
 }
 header{
   display: flex;
   width: 100%;
   align-items: center;
-  margin-top: 2%;
+  margin: 1% 0%;
 }
 header nav{
   display: flex;
@@ -44,7 +45,7 @@ header nav{
 }
 main{
   background-color:var(--color_primary);
-  margin-bottom: 1%;
+  margin-bottom: 2%;
   box-sizing: border-box;
   padding: 1% 1%;
 }
@@ -85,23 +86,32 @@ main{
 }
 .hero>img{
   width: 70%;
+  min-width: 487px;
 }
 .galeria{
   display: grid;
   width: 100%;
   box-sizing: border-box;
-  gap: 2%;
-  padding: 0% 2%;
+  padding: 0% 1%;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(autofit, 1fr);
 }
 article{
   background-color: var(--color_secundary);
   border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   text-align: center;
+  align-items: center;
   padding: 5%;
+  margin: 2%;
   box-shadow: 0px 6px 23px -15px rgba(0,0,0,0.75);
   transition: transform 0.5s;
+}
+article p{
+  width: 100%;
+  margin-bottom: 1%;
 }
 article img{
   width: 70%;
@@ -109,10 +119,6 @@ article img{
 }
 article:hover{
   transform: scale(1.1);
-}
-article div{
-  display: flex;
-  justify-content: center;
 }
 article button{
   background-color: var(--color_secundary);
@@ -129,11 +135,11 @@ article button{
   filter: grayscale(0%);
 }
 footer{
-  margin-top: 2%;
   text-align: center;
   background-color: var(--color_secundary);
   padding-bottom: 1%;
   font-family: 'Courier New', Courier, monospace;
+  font-size: small;
 }
 .pay img{
   width:2%;
@@ -145,10 +151,23 @@ footer ul{
   font-size: small;
   display: flex;
   justify-content: center;
-  gap: 15px;
-  padding: 20px;
+  gap: 1%;
+  padding:0%
 }
-.pie a{
+footer a{
   text-decoration: none;
   color: grey;
 }
+/*Responsive tablet*/
+@media screen and (min-width: 375px) and (max-width:768px){
+h2{
+  display: none;
+}
+.hero p{
+  display: none;
+}
+footer ul{
+  display: block;
+}
+}
+/*Responsive mobile*/
