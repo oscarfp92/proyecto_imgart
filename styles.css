@@ -1,7 +1,8 @@
 :root{
   --color_primary: whitesmoke;
+  --color_secundary: white;
+  --color_terciary: black;
 }
-
 body{
   width: 100%;
   margin: 0;
@@ -13,10 +14,10 @@ body{
   box-sizing: border-box;
 }
 header{
-display: flex;
-width: 100%;
-justify-content: space-around;
-align-items: center;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
 }
 .categorias{
   display: flex;
@@ -28,9 +29,9 @@ align-items: center;
 }
 .categorias a{
   text-decoration: none;
-  color: black;
+  color:var(--color_terciary);
 }
-header>img{
+.imgart{
   width: 150px;
   height: 60px;
 }
@@ -61,23 +62,23 @@ main{
   font-size: medium ;
 }
 .comprar{
-  background-color: black;
-  color: white;
+  background-color: var(--color_terciary);
+  color: var(--color_secundary);
   border: 0;
 }
 .inspiracion{
-  background-color: white;
+  background-color: var(--color_secundary);
   border: 0;
 }
 .comprar a{
   text-decoration: none;
   list-style: none;
-  color: white;
+  color: var(--color_secundary);
 }
 .inspiracion a{
   text-decoration: none;
   list-style: none;
-  color: black
+  color: var(--color_terciary);
 }
 .hero>img{
   width: 70%;
@@ -93,7 +94,7 @@ main{
   grid-template-rows: repeat(10, 1 fr);
 }
 article{
-  background-color:white;
+  background-color: var(--color_secundary);
   border-radius: 10px;
   text-align: center;
   padding: 5%;
@@ -102,7 +103,7 @@ article{
 }
 article img{
   width: 70%;
-  border: 2px solid black;
+  border: 2px solid var(--color_terciary);
   object-fit: contain;
 
 }
@@ -112,18 +113,17 @@ article:hover{
 article div{
   display: flex;
   justify-content: center;
-  gap: 5px;
 }
 article button{
-  background-color: white;
-  color: black;
+  background-color: var(--color_secundary);
   border: none;
   font-size: medium;
+  cursor: pointer;
 }
 .fav{
-  width: 20px;
   border: none;
   filter: grayscale(100%);
+  cursor: pointer;
 }
 .fav:hover{
   filter: grayscale(0%);
@@ -150,5 +150,4 @@ footer ul{
 .pie a{
   text-decoration: none;
   color: grey;
-
 }
